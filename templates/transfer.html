@@ -1,0 +1,120 @@
+<!-- transfer to this id to this id -->
+
+
+
+{% load static %}
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Contact</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="{% static 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i' %}" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha - v4.1.0
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<body>
+    
+  <!-- ======= Header ======= -->
+  <header id="footer" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+     
+      <h2 class="logo me-auto"><a href="#"><i>Sparks Bank</i></a></h2>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="{% static 'index.html' %}" class="logo me-auto"><img src="{% static 'assets/img/logo.png' %}" alt="" class="img-fluid"></a>-->
+
+      
+    </div>
+  
+  </header><!-- End Header -->
+  <section>
+  <div class="row" >
+        <div class="container" >
+  
+          <div class="section-title">
+            <h2>Transfer Money</h2>
+            <p>Manage transactions in a better way.</p>
+          </div>
+  
+          <div class="row">
+            <form action="transfer" method="post" role="form" >
+              {% csrf_token %}
+              <div class="row">
+                <div class="form-group col-md-2"></div>
+                <div class="form-group col-md-8">
+                  <label for="name">Account Number</label>
+                  <input type="number" name="first_name" class="form-control" id="first_name" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-2"></div>
+                <div class="form-group col-md-8">
+                  <label for="name">Account Name</label>
+                  <input type="text" name="last_name" class="form-control" id="last_name" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-2"></div>
+                <div class="form-group col-md-8">
+                  <label for="name">UPI ID</label>
+                  <input type="text" name="username" class="form-control" id="username" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-2"></div>
+                <div class="form-group col-md-8">
+                  <label for="name">Amount</label>
+                  <input type="number" name="id" class="form-control" id="id" required>
+                </div>
+              </div>
+              
+              
+              
+              <br>
+              <div><center><button type="submit">Transfer Money</button></center></div>
+            </form>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+      <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container footer-bottom clearfix">
+      
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+        <i>Designed by Silvia Joy</i>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+</body>
+</html>
